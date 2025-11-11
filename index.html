@@ -1,208 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Churrasco do Fabrício - O melhor churrasco de Paço do Lumiar! Sabor, tradição e atendimento de qualidade. Peça pelo WhatsApp ou venha nos visitar.">
-  <title>Churrasco do Fabrício 🍖</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pneubest | Pneus e Serviços Automotivos — Porto Belo, SC</title>
+<meta name="description" content="Pneubest — Pneus, montagem, balanceamento e alinhamento em Porto Belo/SC. Solicite orçamento via WhatsApp ou telefone. Atendimento profissional e garantia.">
+<!-- Structured Data (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Pneubest",
+  "legalName": "Pneubest Comercial LTDA",
+  "url": "https://seu-dominio.com", 
+  "telephone": "+554930300000", 
+  "email": "fi****@****.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Aliatar Silva, 10, Bloco B",
+    "addressLocality": "Sertao de Santa Luzia",
+    "addressRegion": "SC",
+    "postalCode": "88210-000",
+    "addressCountry": "BR"
+  },
+  "foundingDate": "2020-04-24",
+  "legalName": "Pneubest Comercial LTDA",
+  "priceRange": "R$",
+  "sameAs": []
+}
+</script>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background-color: #fffaf3;
-      color: #2e2e2e;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1604908177522-040dbb34f38e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-      position: relative;
-    }
-
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.55);
-    }
-
-    header h1, header p, header a {
-      position: relative;
-      z-index: 2;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      margin-top: 0.8rem;
-      font-size: 1.2rem;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #25d366;
-      color: white;
-      padding: 1rem 1.8rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      transition: background-color 0.3s;
-    }
-
-    .cta-button:hover {
-      background-color: #1ebe5d;
-    }
-
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .about {
-      text-align: center;
-    }
-
-    .about img {
-      width: 100%;
-      max-width: 750px;
-      border-radius: 12px;
-      margin-top: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .menu {
-      background-color: #fff3e0;
-      border-top: 4px solid #b22222;
-      border-bottom: 4px solid #b22222;
-    }
-
-    .menu h2 {
-      text-align: center;
-      color: #b22222;
-      margin-bottom: 1.5rem;
-    }
-
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .item {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .item:hover {
-      transform: scale(1.03);
-    }
-
-    .item img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .item h3 {
-      margin: 0.7rem 0;
-      color: #b22222;
-    }
-
-    .item p {
-      padding: 0 1rem 1rem;
-      font-size: 0.95rem;
-      color: #444;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 12px;
-      margin-top: 1rem;
-    }
-
-    footer {
-      background-color: #b22222;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8rem; }
-      .cta-button { font-size: 1rem; }
-    }
-  </style>
+<style>
+  :root{
+    --primary:#0d47a1; --accent:#1976d2; --cta:#25d366; --bg:#f8f9fa; --card:#fff;
+    --muted:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;font-size:16px;line-height:1.5;background:var(--bg);color:#111}
+  header{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;padding:2.5rem 1rem;text-align:center}
+  header .wrap{max-width:1100px;margin:auto}
+  header h1{margin:0;font-size:1.9rem}
+  header p{margin:.6rem 0 0;color:rgba(255,255,255,0.9)}
+  .hero-ctas{margin-top:1rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:.9rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:600}
+  .btn-green{background:var(--cta);color:#fff}
+  .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.18)}
+  main{max-width:1100px;margin:1.5rem auto;padding:0 1rem}
+  .grid{display:grid;gap:1rem}
+  .two{grid-template-columns:1fr 400px}
+  .card{background:var(--card);border-radius:12px;padding:1.1rem;box-shadow:0 6px 18px rgba(13,47,161,0.08)}
+  h2{margin:0 0 .6rem}
+  p.lead{color:var(--muted);margin:0 0 1rem}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:.6rem}
+  .service{padding:.8rem;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,0.04)}
+  .contact-info dl{display:grid;gap:.4rem}
+  .map{width:100%;height:260px;border-radius:10px;border:0;margin-top:.8rem}
+  form .form-row{display:flex;gap:.6rem;flex-wrap:wrap}
+  input,textarea,select{width:100%;padding:.7rem;border:1px solid #e5e7eb;border-radius:8px;font-size:0.95rem}
+  label{font-weight:600;font-size:.95rem;margin-bottom:.25rem;display:block}
+  .small{font-size:.9rem;color:var(--muted)}
+  footer{background:var(--primary);color:#fff;padding:1rem;text-align:center;margin-top:1.2rem;border-top:4px solid rgba(255,255,255,0.06)}
+  nav.terms{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-top:.6rem}
+  a.ghost{color:#fff;text-decoration:underline}
+  /* cookie banner */
+  #cookieBanner{position:fixed;left:1rem;right:1rem;bottom:1rem;background:#fff;padding:1rem;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.12);display:flex;gap:1rem;align-items:center;justify-content:space-between;z-index:999}
+  #cookieBanner .text{flex:1;margin-right:1rem}
+  @media(max-width:820px){.two{grid-template-columns:1fr}.hero-ctas{flex-direction:column;align-items:center}.card{padding:.9rem}}
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Churrasco do Fabrício</h1>
-    <p>🔥 O melhor churrasco de Paço do Lumiar — sabor e tradição desde 2023!</p>
-    <a class="cta-button" href="https://wa.me/5598982000000" target="_blank">🍖 Peça Agora no WhatsApp</a>
-  </header>
+<header>
+  <div class="wrap">
+    <h1>Pneubest</h1>
+    <p>Pneus e serviços automotivos — Porto Belo, SC • Atendimento profissional desde 2020</p>
 
-  <section class="about">
-    <h2>Bem-vindo ao Churrasco do Fabrício!</h2>
-    <p>Se você ama carne bem feita, suculenta e no ponto certo, aqui é o seu lugar! Trabalhamos com cortes selecionados, acompanhamentos frescos e um tempero caseiro que conquista todo o Maranhão.</p>
-    <img src="https://images.unsplash.com/photo-1601924582971-c9d0b21f02ef?auto=format&fit=crop&w=1200&q=80" alt="Churrasco na brasa">
+    <div class="hero-ctas" role="group" aria-label="Ações principais">
+      <!-- REPLACE whatsapp-number -->
+      <a class="btn btn-green" href="https://wa.me/554930300000" target="_blank" rel="noopener noreferrer">💬 Solicitar Orçamento (WhatsApp)</a>
+      <a class="btn btn-outline" href="#contato">☎️ Ligar / Agendar Serviço</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="grid two" aria-labelledby="about-title">
+    <div>
+      <article class="card">
+        <h2 id="about-title">Sobre a Pneubest</h2>
+        <p class="lead">A Pneubest Comercial LTDA atua em Porto Belo/SC com foco em pneus, montagem, balanceamento, alinhamento e serviços rápidos para carros e utilitários. Trabalhamos com marcas reconhecidas e oferecemos garantia técnica nos serviços realizados.</p>
+
+        <h3>Por que escolher a Pneubest?</h3>
+        <ul>
+          <li>Equipe técnica qualificada e equipamentos atualizados;</li>
+          <li>Marcas e pneus com procedência comprovada;</li>
+          <li>Atendimento ágil e garantia em serviços;</li>
+          <li>Transparência, nota fiscal e dados da empresa sempre visíveis.</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:1rem">
+        <h2>Serviços Principais</h2>
+        <div class="services" role="list">
+          <div class="service" role="listitem"><strong>Troca de Pneus</strong><div class="small">Instalação profissional e controle de pressão.</div></div>
+          <div class="service" role="listitem"><strong>Balanceamento</strong><div class="small">Balanceamento dinâmico para rodagem estável.</div></div>
+          <div class="service" role="listitem"><strong>Alinhamento 3D</strong><div class="small">Alinhamento por equipamentos digitais.</div></div>
+          <div class="service" role="listitem"><strong>Reparos e Revisões</strong><div class="small">Pequenos reparos e verificação pré-viagem.</div></div>
+        </div>
+      </article>
+    </div>
+
+    <aside class="card contact-info" id="contato" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato & Informações</h2>
+      <dl>
+        <dt class="small"><strong>Razão Social:</strong></dt><dd>Pneubest Comercial LTDA</dd>
+        <dt class="small"><strong>CNPJ:</strong></dt><dd>36.996.649/0001-51</dd>
+        <dt class="small"><strong>Endereço:</strong></dt><dd>Rua Aliatar Silva, 10 — Bloco B, Sertão de Santa Luzia, Porto Belo - SC, CEP 88210-000</dd>
+        <dt class="small"><strong>Telefone:</strong></dt><dd><a href="tel:+554930300000">+55 (49) 3030-0000</a> <!-- replace with real --> </dd>
+        <dt class="small"><strong>E-mail:</strong></dt><dd><a href="mailto:fi****@****.com.br">fi****@****.com.br</a> <!-- replace with real --></dd>
+      </dl>
+
+      <div style="margin-top:0.8rem">
+        <a class="btn btn-green" href="https://wa.me/554930300000" target="_blank" rel="noopener noreferrer">💬 Pedir Orçamento no WhatsApp</a>
+      </div>
+
+      <div style="margin-top:1rem">
+        <h3 class="small">Localização</h3>
+        <iframe class="map" src="https://www.google.com/maps?q=Rua%20Aliatar%20Silva%2010%20Porto%20Belo&output=embed" loading="lazy" title="Mapa Pneubest"></iframe>
+      </div>
+    </aside>
   </section>
 
-  <section class="menu">
-    <h2>🥩 Nossos Favoritos</h2>
-    <div class="menu-items">
-      <div class="item">
-        <img src="https://images.unsplash.com/photo-1553163147-622ab57e9c12?auto=format&fit=crop&w=800&q=80" alt="Picanha na brasa">
-        <h3>Picanha na Brasa</h3>
-        <p>Suculenta, macia e com aquele sabor defumado irresistível.</p>
-      </div>
-      <div class="item">
-        <img src="https://images.unsplash.com/photo-1601050690597-1f8f9495a6c7?auto=format&fit=crop&w=800&q=80" alt="Espetinho misto">
-        <h3>Espetinho Misto</h3>
-        <p>Carne, frango e linguiça — o trio perfeito do churrasco maranhense!</p>
-      </div>
-      <div class="item">
-        <img src="https://images.unsplash.com/photo-1599785209794-5c2e9f9e3c2a?auto=format&fit=crop&w=800&q=80" alt="Costela de chão">
-        <h3>Costela de Chão</h3>
-        <p>Assada lentamente por horas — desmancha na boca!</p>
-      </div>
+  <section style="margin-top:1rem" aria-labelledby="quote-title">
+    <div class="card">
+      <h2 id="quote-title">Solicitar Orçamento / Agendar Serviço</h2>
+      <p class="small">Preencha o formulário ou clique em WhatsApp. Ao enviar, você concorda com os nossos <a href="#privacy">Termos de Uso</a> e com a <a href="#privacy">Política de Privacidade</a>.</p>
+
+      <form id="leadForm" onsubmit="return handleSubmit(event)" novalidate>
+        <div class="form-row">
+          <div style="flex:1">
+            <label for="name">Nome completo</label>
+            <input id="name" name="name" type="text" required placeholder="Seu nome" />
+          </div>
+          <div style="width:220px">
+            <label for="phone">Telefone/WhatsApp</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+55 (__) _____-____" />
+          </div>
+        </div>
+
+        <div style="margin-top:.6rem">
+          <label for="service">Serviço de interesse</label>
+          <select id="service" name="service">
+            <option>Troca de pneus</option>
+            <option>Balanceamento</option>
+            <option>Alinhamento</option>
+            <option>Revisão / Outros</option>
+          </select>
+        </div>
+
+        <div style="margin-top:.6rem">
+          <label for="message">Mensagem / Detalhes</label>
+          <textarea id="message" name="message" rows="4" placeholder="Descreva modelo do veículo, medidas do pneu, data desejada..." ></textarea>
+        </div>
+
+        <div style="margin-top:.6rem;display:flex;gap:.6rem;align-items:center">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent" class="small">Concordo em receber mensagens relacionadas ao meu pedido e li os <a href="#terms">Termos de Uso</a> e a <a href="#privacy">Política de Privacidade</a>.</label>
+        </div>
+
+        <div style="margin-top:.8rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <button class="btn btn-green" type="submit">Enviar Solicitação</button>
+          <a class="btn btn-outline" href="tel:+554930300000">Ligar Agora</a>
+        </div>
+
+        <p id="formMessage" class="small" style="margin-top:.6rem;color:var(--muted)"></p>
+      </form>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>📍 Visite-nos ou Peça Online</h2>
-    <p><strong>Endereço:</strong> Estrada da Maioba, 303 - Maioba, Paço do Lumiar - MA</p>
-    <p><strong>Telefone:</strong> (98) 98200-0000</p>
-    <p><strong>Horário:</strong> Segunda a Domingo, das 10h às 23h</p>
-    <a class="cta-button" href="https://wa.me/5598982000000" target="_blank">💬 Fazer Pedido no WhatsApp</a>
-    <iframe src="https://www.google.com/maps?q=Estrada%20Da%20Maioba%20303%20Pa%C3%A7o%20do%20Lumiar&output=embed"></iframe>
+  <!-- TERMS & PRIVACY -->
+  <section style="margin-top:1rem" aria-labelledby="legal-title">
+    <div class="card" id="terms">
+      <h2 id="legal-title">Termos de Uso — Pneubest Comercial LTDA</h2>
+      <p class="small"><strong>Vigência:</strong> a partir de 24/04/2020</p>
+
+      <h3>1. Escopo</h3>
+      <p class="small">Estes Termos regem os serviços prestados pela Pneubest (troca de pneus, montagem, balanceamento, alinhamento, reparos) e o uso deste website para solicitar orçamentos e agendamentos.</p>
+
+      <h3>2. Contratação e Orçamento</h3>
+      <p class="small">Os orçamentos fornecidos são válidos por prazo informado no momento da cotação. A contratação efetiva do serviço ocorre mediante confirmação por telefone, WhatsApp ou e-mail e/ou pagamento quando aplicável.</p>
+
+      <h3>3. Pagamento e Nota Fiscal</h3>
+      <p class="small">Emitimos nota fiscal para todos os serviços e produtos vendidos. Aceitamos pagamento em dinheiro, cartão e transferências, conforme informado no momento da venda.</p>
+
+      <h3>4. Prazo e Garantia</h3>
+      <p class="small">Os serviços possuem garantia técnica conforme descrito no comprovante. A garantia não cobre danos por uso indevido, acidentes ou perfurações por terceiros.</p>
+
+      <h3>5. Cancelamento e Reagendamento</h3>
+      <p class="small">Cancelamentos devem ser informados com antecedência razoável. Para serviços agendados, solicitamos contato prévio; cancelamentos de última hora podem gerar taxa conforme política local.</p>
+
+      <h3>6. Limitação de Responsabilidade</h3>
+      <p class="small">A Pneubest não se responsabiliza por danos indiretos, lucros cessantes ou perdas decorrentes de uso de pneus remoldados não recomendados ou instalação imprópria realizada por terceiros.</p>
+
+      <h3>7. Alterações</h3>
+      <p class="small">Reservamo-nos o direito de alterar estes Termos a qualquer momento. Mudanças significativas serão comunicadas por e-mail ou publicadas nesta página.</p>
+    </div>
+
+    <div class="card" id="privacy" style="margin-top:1rem">
+      <h2>Política de Privacidade & LGPD</h2>
+      <p class="small"><strong>Responsável:</strong> Pneubest Comercial LTDA — CNPJ 36.996.649/0001-51</p>
+
+      <h3>1. Dados coletados</h3>
+      <p class="small">Coletamos nome, telefone, e-mail, mensagem e dados de veículo fornecidos voluntariamente no formulário ou via WhatsApp para fornecer orçamentos e agendamento. Também coletamos dados técnicos anônimos (cookies) para análise de uso do site.</p>
+
+      <h3>2. Finalidade</h3>
+      <p class="small">Os dados são usados para: (a) responder solicitações e agendamentos; (b) emissão de nota fiscal; (c) melhoria do serviço; (d) obrigações legais e fiscais.</p>
+
+      <h3>3. Base legal</h3>
+      <p class="small">Tratamos dados com base no consentimento do titular (Art. 7º, LGPD) e para execução de contrato/obrigação legal quando aplicável.</p>
+
+      <h3>4. Compartilhamento</h3>
+      <p class="small">Dados podem ser compartilhados com provedores de pagamento, sistemas de faturamento e prestadores técnicos estritamente para execução do serviço. Não vendemos dados a terceiros.</p>
+
+      <h3>5. Retenção</h3>
+      <p class="small">Os dados são mantidos pelo tempo necessário para cumprir finalidades legais, fiscais e para atendimento do titular. Dados de marketing são mantidos até revogação do consentimento.</p>
+
+      <h3>6. Direitos dos titulares</h3>
+      <p class="small">O titular tem direito de acessar, corrigir, portar, eliminar dados, limitar tratamento ou revogar consentimento. Solicitações devem ser enviadas para o e-mail: <a href="mailto:fi****@****.com.br">fi****@****.com.br</a> (substituir por e-mail real).</p>
+
+      <h3>7. Segurança</h3>
+      <p class="small">Adotamos medidas técnicas e administrativas razoáveis para proteger os dados. Nenhuma transmissão é 100% segura — recomendamos o uso de canais oficiais para dados sensíveis.</p>
+
+      <h3>8. Cookies e rastreamento</h3>
+      <p class="small">Usamos cookies funcionais e analíticos. Você pode optar por não aceitar cookies via banner. Para analytics, usamos provedores terceiros que têm suas próprias políticas.</p>
+    </div>
   </section>
 
-  <footer>
-    © 2025 Churrasco do Fabrício LTDA - CNPJ 51.589.381/0001-27<br>
-    Feito com ❤️ no Maranhão
-  </footer>
+  <nav class="card terms" aria-label="Links úteis">
+    <a href="#terms" class="small">Termos de Uso</a>
+    <a href="#privacy" class="small">Política de Privacidade</a>
+    <a href="#contato" class="small">Contato</a>
+  </nav>
+</main>
 
+<footer>
+  © <span id="year"></span> Pneubest Comercial LTDA — CNPJ 36.996.649/0001-51 • Rua Aliatar Silva, 10, Bloco B, Porto Belo - SC
+  <div style="margin-top:.5rem" class="small">Recomendamos publicar este site em HTTPS e manter dados de contato atualizados para aprovação em verificações comerciais.</div>
+</footer>
+
+<!-- Cookie consent banner -->
+<div id="cookieBanner" style="display:none" role="dialog" aria-live="polite">
+  <div class="text">
+    <strong>Usamos cookies</strong>
+    <div class="small">Este site usa cookies essenciais e analíticos para melhorar a experiência. Ao continuar navegando você concorda com nossa Política de Privacidade.</div>
+  </div>
+  <div style="display:flex;gap:.5rem;align-items:center">
+    <button class="btn btn-green" id="acceptCookies">Aceitar</button>
+    <button class="btn btn-outline" id="declineCookies">Recusar</button>
+  </div>
+</div>
+
+<script>
+  // fill year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // cookie banner logic (simple)
+  function cookieAccepted(){ localStorage.setItem('pneubest_cookies','accepted'); hideCookie(); }
+  function cookieDeclined(){ localStorage.setItem('pneubest_cookies','declined'); hideCookie(); }
+  function hideCookie(){ document.getElementById('cookieBanner').style.display='none'; }
+  document.getElementById('acceptCookies').addEventListener('click', cookieAccepted);
+  document.getElementById('declineCookies').addEventListener('click', cookieDeclined);
+  (function(){ if(!localStorage.getItem('pneubest_cookies')){ document.getElementById('cookieBanner').style.display='flex'} })();
+
+  // simple form handler — demonstrates serverless client-side send (replace with your endpoint / CRM)
+  function handleSubmit(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value.trim();
+    const consent = document.getElementById('consent').checked;
+    const formMessage = document.getElementById('formMessage');
+
+    if(!name || !phone || !consent){
+      formMessage.textContent = 'Por favor, preencha nome, telefone e aceite os termos.';
+      return false;
+    }
+
+    // TODO: Replace this client-side simulation with a POST to your backend (CRM / Google Sheets / Zapier / Integromat)
+    // Example:
+    // fetch('/api/leads', {method:'POST', body:JSON.stringify({name,phone,service,message}), headers:{'Content-Type':'application/json'}})
+
+    // For now, open WhatsApp with prefilled message as fallback:
+    const whatsapp = 'https://wa.me/554930300000?text=' + encodeURIComponent(`Olá, sou ${name}. Gostaria de orçamento para: ${service}. Detalhes: ${message}. Tel: ${phone}`);
+    formMessage.textContent = 'Enviando para WhatsApp...';
+    window.open(whatsapp,'_blank');
+    formMessage.textContent = 'Solicitação iniciada via WhatsApp. Também enviaremos confirmação por e-mail/telefone quando disponível.';
+    return false;
+  }
+
+  // Accessibility: keyboard focus for cookie buttons
+  document.getElementById('acceptCookies').addEventListener('keyup', function(e){ if(e.key==='Enter') cookieAccepted(); });
+  document.getElementById('declineCookies').addEventListener('keyup', function(e){ if(e.key==='Enter') cookieDeclined(); });
+</script>
 </body>
 </html>
